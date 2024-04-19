@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/Absar69/AbsarWheels#readme",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "mongoose": "^8.3.2"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
