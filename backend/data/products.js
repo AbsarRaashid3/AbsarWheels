@@ -1,6 +1,6 @@
 const products = [
     {
-      _id: '1',
+  
       name: 'Honda Civic',
       image: '/images/Civic.jpg',
       description:
@@ -13,7 +13,7 @@ const products = [
       numReviews: 34,
     },
     {
-      _id: '2',
+
       name: 'Toyota Corolla',
       image: '/images/corolla.jpg',
       description: 'Durable and spacious, the Toyota Corolla offers a smooth ride with great resale value.',
@@ -25,7 +25,7 @@ const products = [
       numReviews: 40,
     },
     {
-      _id: '3',
+   
       name: 'Cross',
       image: '/images/cross.jpg',
       description: 'Iconic American muscle car known for its performance and style. Ideal for those seeking thrills on the road.',
@@ -37,7 +37,7 @@ const products = [
       numReviews: 22,
     },
     {
-      _id: '4',
+ 
       name: 'City',
       image: '/images/HondaCity.jpg',
       description: 'Sports car with exhilarating acceleration, precise handling, and a sculpted aerodynamic body.',
@@ -49,7 +49,7 @@ const products = [
       numReviews: 29,
     },
     {
-      _id: '5',
+
       name: 'MG HS',
       image: '/images/hs.jpg',
       description: 'Luxury all-electric sedan that combines performance, safety, and cutting-edge technology.',
@@ -61,7 +61,7 @@ const products = [
       numReviews: 50,
     },
     {
-      _id: '6',
+  
       name: 'Sportage',
       image: '/images/kia.jpg',
       description: 'Affordable electric vehicle with a solid range and low maintenance costs. Great for city commuting.',
@@ -73,7 +73,7 @@ const products = [
       numReviews: 15,
     },
     {
-      _id: '7',
+  
       name: 'Swift',
       image: '/images/SWIFT.jpg',
       description: 'Combines luxury and performance with advanced technology and a comfortable cabin.',
@@ -85,7 +85,7 @@ const products = [
       numReviews: 30,
     },
     {
-      _id: '8',
+
       name: 'Tucson',
       image: '/images/tucson.jpg',
       description: 'Sleek design and advanced features make it a standout in the luxury small car class.',
