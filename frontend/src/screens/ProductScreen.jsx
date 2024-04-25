@@ -9,8 +9,6 @@ import Message from '../components/Message';
 import { useGetProductDetailsQuery } from '../slices/productApiSlice';
 
 
-
-
 const ProductScreen = () => {
 
 
@@ -25,7 +23,7 @@ const ProductScreen = () => {
         Go Back
     </Link>
 
-    
+
 
 
 
