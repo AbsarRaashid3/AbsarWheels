@@ -20,7 +20,7 @@ const authUser= asyncHandler(async (req, res) => {
             userId: user._id
             
         }, process.env.JWT_SECRET, {
-            expiresIn: '30d',
+            expiresIn: '30d'
         });
 
         // set JWT token in cookie HTTP-ONLY
