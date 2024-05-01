@@ -33,7 +33,7 @@ const ProductScreen = () => {
     const { data: product, isLoading, error } = useGetProductDetailsQuery(productId);
 
     const addToCartHandler = () => {
-        dispatch(addToCart({ ...productId, qty }));
+        dispatch(addToCart({ ...product, qty }));
         navigate('/cart');
 
     };
