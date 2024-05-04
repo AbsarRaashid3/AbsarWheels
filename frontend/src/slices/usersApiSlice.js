@@ -15,6 +15,7 @@ export const usersApiSlice = apiSlice.injectEndpoints({
             query: () => ({ 
                 url: `${USERS_URL}/logout`,
                 method: 'POST',
+                
             }),
             
         }),
