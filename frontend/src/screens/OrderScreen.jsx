@@ -84,6 +84,7 @@ return isLoading ? <Loader /> : error ? <Message variant='danger' />
                 </ListGroup>
             </Col>
             <Col md={4}>
+                
                 <Card>
                     <ListGroup variant='flush'>
                         <ListGroup.Item>
