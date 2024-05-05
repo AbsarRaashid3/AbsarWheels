@@ -1,5 +1,5 @@
 import React from 'react';
-import {link, useParams} from 'react-router-dom';
+import {Link, useParams} from 'react-router-dom';
 import { Row, Col, ListGroup, Image, Card, Button } from 'react-bootstrap';
 import Message from '../components/Message';
 import Loader from '../components/Loader';
@@ -60,7 +60,9 @@ return isLoading ? <Loader /> : error ? <Message variant='danger' />
                         ) }
                 </ListGroup.Item>
                         
-                        <h2>Order Items</h2>
+                          <ListGroup.Item>
+                            <h2>Order Items</h2>
+                         </ListGroup.Item>
                         {order && order.orderItems && order.orderItems.map((item, index) => (
 
                             <ListGroup.Item key={index}>
@@ -69,7 +71,7 @@ return isLoading ? <Loader /> : error ? <Message variant='danger' />
                                         <Image src={item.image} alt={item.name} fluid rounded />
                                     </Col>
                                     <Col>
-                                        <link to={`/product/${item.product}`}>{item.name}</link>
+                                        <Link to={`/product/${item.product}`}>{item.name}</Link>
                                     </Col>
                                     <Col md={4}>
                                         {item.qty} x ${item.price} = ${item.qty * item.price}
