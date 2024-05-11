@@ -1,9 +1,16 @@
 import React from 'react';
 import {Link, useParams} from 'react-router-dom';
 import { Row, Col, ListGroup, Image, Card, Button } from 'react-bootstrap';
+import {toast} from 'react-toastify';
+import { useSelector } from 'react-redux';
 import Message from '../components/Message';
 import Loader from '../components/Loader';
-import { useGetOderDetailsQuery } from '../slices/ordersApiSlice';
+import { useGetOderDetailsQuery, useDeliverOrderMutation } from '../slices/ordersApiSlice';
+
+
+
+
+
 
 
 
@@ -11,6 +18,21 @@ const OrderScreen = () => {
 
 const { id: orderId } = useParams();
 const { data: order, refetch, isLoading, error } = useGetOderDetailsQuery(orderId);
+
+
+const [deliverOrder, { isLoading: loadingDeliver }] = useDeliverOrderMutation();
+
+const { userInfo } = useSelector((state) => state.auth);
+
+const deliverOrderHandler = async () => {
+   try {
+       await deliverOrder(orderId);
+       refetch();
+       toast.success('Order Delivered');
+    } catch (err) {
+        toast.error(err?.data?.message || err.message);
+    }
+}
 
 return isLoading ? <Loader /> : error ? <Message variant='danger' />
 : (
@@ -116,7 +138,20 @@ return isLoading ? <Loader /> : error ? <Message variant='danger' />
                         </ListGroup.Item>
                         {/* PAY ORDER PLACEHOLDER*/}
                         {/* MARK AS DELIVERED PLACEHOLDER*/}
-                        {/* PAY ORDER PLACEHOLDER*/}
+                        {loadingDeliver && <Loader />}
+
+
+                        {userInfo && userInfo.isAdmin && order.isPaid && !order.isDelivered && (
+                            <ListGroup.Item>
+                                <Button
+                                    type='button'
+                                    className='btn btn-block'
+                                    onClick={deliverOrderHandler}
+                                >
+                                    Mark As Delivered
+                                </Button>
+                            </ListGroup.Item>
+                        )}
 
                     </ListGroup>
                 </Card>
