@@ -33,24 +33,6 @@ List a Car – Upload details, images, and set pricing via your dashboard.
 Search for Cars – Use filters to find cars that match your criteria.
 Make a Purchase – Contact sellers directly and proceed with payment securely.
 
-## Folder Structure
-
-AbsarWheels/
-│── backend/        # Node.js/Express.js backend
-│   ├── models/     # MongoDB database models
-│   ├── routes/     # API endpoints
-│   ├── controllers/# Business logic
-│   ├── config/     # Environment settings
-│   ├── server.js   # Main server file
-│── frontend/       # React.js frontend
-│   ├── src/        # Main frontend source code
-│   ├── components/ # Reusable UI components
-│   ├── pages/      # App pages
-│   ├── redux/      # State management
-│   ├── App.js      # Main React file
-│── package.json    # Dependencies & scripts
-│── README.md       # Project documentation
-
 
 # Technologies Used
 
