@@ -29,10 +29,10 @@ Since the frontend and backend are set up to run simultaneously via a proxy, sim
 npm run dev
 ```
 ## Usage
-Create an Account – Sign up using email or social media login.
-List a Car – Upload details, images, and set pricing via your dashboard.
-Search for Cars – Use filters to find cars that match your criteria.
-Make a Purchase – Contact sellers directly and proceed with payment securely.
+**Create an Account – Sign up using email or social media login.** <br>
+**List a Car – Upload details, images, and set pricing via your dashboard.** <br>
+**Search for Cars – Use filters to find cars that match your criteria.** <br>
+**Make a Purchase – Contact sellers directly and proceed with payment securely.** <br>
 
 
 # Technologies Used
