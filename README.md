@@ -8,22 +8,23 @@ AbsarWheels is a high-end car trading web application built using the MERN stack
 ✅ Proxy Setup – The frontend and backend run simultaneously for seamless development.
 ✅ Responsive Design – Fully optimized for desktops, tablets, and mobile devices.
 ✅ Real-Time Notifications – Get instant updates on inquiries, offers, and transaction statuses.
-```
+
 ## Installation
-### 1️⃣ Clone the Repository
+```
+1️⃣ Clone the Repository
 git clone https://github.com/AbsarRaashid3/AbsarWheels.git
 cd AbsarWheels
 
-### 2️⃣ Install Dependencies (Frontend & Backend)
+2️⃣ Install Dependencies (Frontend & Backend)
 npm install && cd backend && npm install
 
-### 3️⃣ Set Up Environment Variables
+3️⃣ Set Up Environment Variables
 Create a .env file in the backend folder and add the following:
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 PAYMENT_GATEWAY_KEY=your_stripe_key
 
-### 4️⃣ Start the Application
+4️⃣ Start the Application
 Since the frontend and backend are set up to run simultaneously via a proxy, simply run:
 npm run dev
 ```
